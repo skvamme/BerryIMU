@@ -5,6 +5,9 @@
 To compile;
 gcc -o compass_tutorial02 compass_tutorial02.c -lm
 
+To compile the port:
+gcc -o compass_port compass_port.c -lm
+
 
 More info here;
 http://ozzmaker.com/2014/12/17/compass2
