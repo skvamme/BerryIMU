@@ -9,7 +9,7 @@ To compile the port:
 gcc -o compass_port compass_port.c -lm
 
 And in erlang:
-
+% Note that compass_port need root privilege to run
 	Port1 = open_port({spawn, "../../priv/compass_port"}, [{packet, 2},binary]),
     (some more code here)
 

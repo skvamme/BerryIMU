@@ -13,6 +13,8 @@ To compile the erlang port:
 gcc -o gyro_accelerometer_port -l rt gyro_accelerometer_port.c -lm
 
 And in erlang:
+% Note that compass_port need root privilege to run
+
 	Port2 = open_port({spawn, "../../priv/gyro_accelerometer_port"}, [{packet, 2},binary]),
     (some more code here)
 
