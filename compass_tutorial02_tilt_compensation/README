@@ -8,6 +8,17 @@ gcc -o compass_tutorial02 compass_tutorial02.c -lm
 To compile the port:
 gcc -o compass_port compass_port.c -lm
 
+And in erlang:
+
+	Port1 = open_port({spawn, "../../priv/compass_port"}, [{packet, 2},binary]),
+    (some more code here)
+
+receive
+		{Port1, {data,<<Compass/little-float>>}} ->
+
+
+
+
 
 More info here;
 http://ozzmaker.com/2014/12/17/compass2
